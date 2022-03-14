@@ -45,4 +45,31 @@ print(my_list[0])     # output => 'sara'
 my_tuple[0] = 'ansh'    # modifying tuple => throws an error
 my_list[0] = 'ansh'    # modifying list => list modified
 print(my_tuple[0])     # output => 'sara'
-print(my_list[0])     # output => 'ansh' ```
+print(my_list[0])     # output => 'ansh'
+```
+
+### 7. **Quais são os tipos de dados internos comuns em Python?**
+Existem vários tipos de dados integrados em Python. Embora o Python não exija que os tipos de dados sejam definidos explicitamente durante as declarações de variáveis, erros de tipo provavelmente ocorrerão se o conhecimento dos tipos de dados e sua compatibilidade entre si forem negligenciados. Python fornece ``type()`` e ``isinstance()`` funções para verificar o tipo dessas variáveis. Esses tipos de dados podem ser agrupados nas seguintes categorias:
+
+- **None Type:**
+A palavra-chave ``None`` representa os valores nulos em Python. A operação de igualdade booleana pode ser executada usando esses objetos NoneType.
+
+- **Numeric Types:**
+Existem três tipos numéricos distintos: **números inteiros**, **ponto flutuante** e **números complexos**. Além disso, **booleanos** são um subtipo de inteiros.  
+*int* - Armazena literais inteiros incluindo números hexadecimais, octais e binários como inteiros.  
+*float* -	Armazena literais contendo valores decimais e/ou sinais de expoente como números de ponto flutuante.  
+*complex* - Armazena números complexos na forma (A + Bj) e possui atributos: realeimag.  
+*bool* - Armazena o valor booleano (True ou False).
+
+ ***Nota:*** *A biblioteca padrão também inclui **frações** para armazenar números racionais e **decimal** para armazenar números de ponto flutuante com precisão definida pelo usuário.*
+
+- **Tipos de sequência:**
+De acordo com o Python Docs, existem três tipos básicos de sequência: **listas**, **tuplas** e **range**. Os tipos de sequência têm os operadores ``in`` e ``not in`` definidos para percorrer seus elementos. Esses operadores compartilham a mesma prioridade que as operações de comparação.  
+*tupla* - Sequência imutável usada para armazenar coleção de itens.  
+*lista* - Sequência mutável usada para armazenar coleção de itens.  
+*range* - Representa uma sequência imutável de números gerados durante a execução.  
+*str* -	Sequência imutável de pontos de código Unicode para armazenar dados textuais.  
+
+***Nota:*** A biblioteca padrão também inclui tipos adicionais para processamento:
+1. Dados binários como ``bytearray bytes``, ``memoryview``, e
+2. Strings de texto  como ``str``.
